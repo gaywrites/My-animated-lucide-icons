@@ -1,16 +1,40 @@
 /* Diagnostic Styling */
-* {
-  outline: 2px dotted gray;
-} 
-
-/* temp background color */
-body {
-    background: lightgray;
+svg {
+  scale: 6;
+  }
+.lucide-notebook-pen:hover {
+  animation: rubbernote 5s 1s;
 }
-  
-/* vertical and horizontal centering */
+
+@keyframes rubbernote {
+      30% { transform: scale(1.2); }
+    40%, 60% { transform: rotate(-20deg) scale(1.2); }
+    50% { transform: rotate(20deg) scale(1.2); }
+    70% { transform: rotate(0deg) scale(1.2); }
+    100% { transform: scale(1); }
+}
 body {
   display: grid;
   place-content: center;
   height: 100vh;
 }
+#hash1 {
+  stroke: deepskyblue;
+}
+#hash2 {
+  stroke: darkgreen;
+}
+#hash3 {
+  stroke: orangered;
+}
+#hash4 {
+  stroke: firebrick;
+}
+#pen {
+  fill: gold;
+  stroke: burlywood;
+}
+#notebook {
+  stroke: black;
+}
+
